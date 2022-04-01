@@ -103,7 +103,7 @@ section.destaque {
   background-size: cover;
   background-position: center;
   width: 100%;
-  min-height: 550px;
+  height: 550px;
   position: relative;
   z-index: 1;
   overflow-y: hidden;
@@ -202,4 +202,25 @@ section.destaque {
   position: absolute;
   top: 2px;
   left: 3px;
+}
+
+section.vitrine .vitrine-flex{
+  display: flex;
+  flex-wrap: nowrap;
+  width: 90%;
+  margin-right: 5%;
+  z-index: 4;
+}
+
+.vitrine-single-banner{
+  width: 16.6%;
+  padding-top: 16.6%;
+  background-position: center;
+  
+}
+
+.vitrine-single-banner:hover{
+  transform: scale(1.2,1.2);
+  overflow-x: hidden;
+  transition: 1s;
 }
