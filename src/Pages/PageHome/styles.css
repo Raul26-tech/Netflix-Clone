@@ -6,6 +6,7 @@
 }
 
 body {
+  overflow-x: hidden;
   background: black;
 }
 
@@ -206,21 +207,57 @@ section.destaque {
 
 section.vitrine .vitrine-flex{
   display: flex;
-  flex-wrap: nowrap;
-  width: 90%;
-  margin-right: 5%;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left: 0.75%;
   z-index: 4;
 }
 
 .vitrine-single-banner{
   width: 16.6%;
   padding-top: 16.6%;
-  background-position: center;
-  
+  background-position: center; 
 }
 
 .vitrine-single-banner:hover{
   transform: scale(1.2,1.2);
   overflow-x: hidden;
   transition: 1s;
+}
+
+
+/* Media screens */
+@media screen and (max-width: 772px) {
+  .vitrine-single-banner{
+    width: 33.3%;
+    padding-top: 16.6%;
+    
+  }
+
+  section.vitrine .vitrine-flex{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0;
+    z-index: 4;
+  }
+
+
+}
+
+
+@media screen and (max-width: 780px) {
+  .vitrine-single-banner{
+    width: 50%;
+    padding-top: 16.6%;
+    
+  }
+
+  section.vitrine .vitrine-flex{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2%;
+    z-index: 4;
+  }
+
+
 }
